@@ -3,7 +3,8 @@
 sudo apt update
 sudo apt upgrade -y
 sudo apt install intel-microcode tuned, unattended-upgrades, fail2ban, apparmor-profiles, apparmor-profiles-extra
-sudo tuned-adm virt-host
+
+sudo tuned-adm profile virt-host
 
 sudo curl https://raw.githubusercontent.com/Whonix/security-misc/master/etc/modprobe.d/30_security-misc.conf -o /etc/modprobe.d/30_security-misc.conf
 sudo curl https://raw.githubusercontent.com/Whonix/security-misc/master/etc/sysctl.d/30_security-misc.conf -o /etc/sysctl.d/30_security-misc.conf
