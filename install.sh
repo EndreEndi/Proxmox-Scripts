@@ -15,7 +15,6 @@ sudo curl https://raw.githubusercontent.com/Whonix/security-misc/master/etc/sysc
 sudo rm -rf /etc/chrony/chrony.conf
 sudo curl https://raw.githubusercontent.com/GrapheneOS/infrastructure/main/chrony.conf -o /etc/chrony/chrony.conf
 
-sudo sed -i 's/nullok//g' /etc/pam.d/system-auth
 echo "* hard core 0" | sudo tee -a /etc/security/limits.conf
 
 sudo bash <(curl -s https://raw.githubusercontent.com/Weilbyte/PVEDiscordDark/master/PVEDiscordDark.sh ) install
