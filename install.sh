@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo sed -i '1 {s/^/#/}' /etc/apt/sources.list.d/pve-enterprise.list
+sudo sed -i 's/main contrib/main contrib non-free/' /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade -y
 sudo apt install intel-microcode tuned unattended-upgrades fail2ban apparmor-profiles apparmor-profiles-extra
